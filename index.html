@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chuck Norris Joke CRUD</title>
+</head>
+<body>
+    <h1>Chuck Norris Joke CRUD</h1>
+
+
+    <h2>Create Joke</h2>
+    <form id="create-form">
+        <label for="create-joke">Joke:</label>
+        <input type="text" id="create-joke" required>
+        <button type="submit">Create</button>
+    </form>
+
+
+    <h2>Read Joke</h2>
+    <button onclick="getRandomJoke()">Get Random Joke</button>
+    <p id="read-joke"></p>
+
+
+    <h2>Update Joke</h2>
+    <form id="update-form">
+        <label for="update-id">ID:</label>
+        <input type="text" id="update-id" required>
+        <label for="update-joke">New Joke:</label>
+        <input type="text" id="update-joke" required>
+        <button type="submit">Update</button>
+    </form>
+
+
+    <h2>Delete Joke</h2>
+    <form id="delete-form">
+        <label for="delete-id">ID:</label>
+        <input type="text" id="delete-id" required>
+        <button type="submit">Delete</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
